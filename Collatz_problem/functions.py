@@ -6,4 +6,4 @@ def collatz(num):
     else:
         ans = num*3+1
 
-    return ans
+    return int(ans)

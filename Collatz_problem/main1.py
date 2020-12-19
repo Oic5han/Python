@@ -9,12 +9,11 @@
 import functions
 
 #初期値設定
-baseNum = input('n=')
+baseNum = int(input('n='))
 print(baseNum)
 
 #条件操作を繰り返す
 while baseNum!=1:
-    x = functions.collatz(baseNum)
-    baseNum = x
+    baseNum = functions.collatz(baseNum)
     print(baseNum)
 print('end')
