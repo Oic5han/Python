@@ -8,19 +8,12 @@
 
 import functions
 
-#初期値設定
-count = 1
-baseNum = count
-
 #複数の数字で計算する
-while count<=50:
-    print(baseNum)
+for num in range(1, 51):
+    print(num)
     #条件操作を繰り返す
-    while baseNum!=1:
-        x = functions.collatz(baseNum)
-        baseNum = x
-        print(baseNum)
+    while num!=1:
+        x = functions.collatz(num)
+        num = x
+        print(int(num))
     print('end\n')
-
-    count+=1
-    baseNum=count
