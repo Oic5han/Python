@@ -8,12 +8,12 @@
 
 import functions
 
-#複数の数字で計算する
-for num in range(1, 51):
+min = int(input('min='))
+max = int(input('man='))
+
+for num in range(min, max+1):
     print(num)
-    #条件操作を繰り返す
     while num!=1:
-        x = functions.collatz(num)
-        num = x
-        print(int(num))
+        num = functions.collatz(num)
+        print(num)
     print('end\n')
